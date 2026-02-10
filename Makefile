@@ -1,6 +1,6 @@
-BOARD ?=
-BUILD_DIR := $(abspath build/${BOARD})
-SHIM_OUTPUT 	:= shim.bin
+BOARD 					?=
+BUILD_DIR 			:= $(abspath build/${BOARD})
+SHIM_OUTPUT 	  := shim.bin
 RECOVERY_OUTPUT := recovery.bin
 MINIOS_OUTPUT 	:= minios.bin
 
@@ -42,4 +42,4 @@ $(BUILD_DIR)/$(RECOVERY_OUTPUT):
 
 clean:
 	${Q}echo "  CLEAN"
-	rm -rf build/kefka
+	rm -rf ${BUILD_DIR}
