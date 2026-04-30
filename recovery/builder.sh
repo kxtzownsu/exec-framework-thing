@@ -7,7 +7,7 @@ source ${SCRIPT_DIR}/../scripts/lib/common.sh
 load_shflags || exit 1
 
 # lol kefka default im crine
-DEFINE_string board "kefka" "Which board to build with" "b"
+DEFINE_string board "x86-mario" "Which board to build with" "b"
 DEFINE_string output "" "Output file" "o"
 
 FLAGS "$@" || exit 1
